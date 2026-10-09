@@ -11,8 +11,8 @@
       // ---- Perillas del efecto (mismos valores/velocidad que la referencia) ----
       const BASE_WIDTH    = () => Math.min(innerWidth * 0.62, 620);
       const ZOOM_END      = 90;
-      const WHEEL_TO_END  = 1700;
-      const TOUCH_TO_END  = 480;
+      const WHEEL_TO_END  = 260;
+      const TOUCH_TO_END  = 140;
       const RECENTER_AT   = 0.35;
       const REVEAL_START  = 0.25;
       const REVEAL_END    = 0.48;
@@ -212,7 +212,7 @@
     (function initShrinkingHeader(){
       const header = document.querySelector('header');
       if (!header) return;
-      const THRESHOLD = 40; // px de scroll antes de encoger
+      const THRESHOLD = 15; // px de scroll antes de encoger
 
       function updateHeader(){
         if (window.scrollY > THRESHOLD) {
